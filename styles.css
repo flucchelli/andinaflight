@@ -1,0 +1,311 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{background-image: url(imagenes/cielo.jpg);
+    background-size: cover;
+    text-transform: uppercase;  
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+
+header{
+ 
+    display: flex;
+    background-color:mintcream;
+    height: 70px;
+    font-family: 'Kanit', sans-serif;
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+
+header picture img{
+    max-width: 120px;
+    margin-left: 2rem;
+}
+
+
+main {
+    margin: auto;
+
+}
+
+
+h1{color:navy;
+text-align: center;
+letter-spacing: 5px;
+word-spacing: 10px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+ 
+}
+
+
+
+h2{color:aliceblue;
+    font-size:x-large;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 10px 
+}
+
+
+h3{color:navy
+
+}
+
+h3 {font-family:inherit;
+    font-size: medium
+}
+
+
+
+th{color:royalblue;
+    font-weight: bold;
+}
+
+
+ li{color:aliceblue;
+    list-style-type:none;
+    font-size: xx-large;
+}
+
+
+td{background:cornflowerblue;
+}
+
+
+/*footer*/
+
+footer {
+   
+   
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+
+
+body footer h3{
+    color:navy
+    
+}
+
+
+a  {
+    text-decoration: none;
+    color:aliceblue
+    
+}.logos img{
+    width: 20px;
+    height: 20px;
+    margin:10px
+}
+
+.logos{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+/*index*/
+
+ul{
+    
+    list-style-type: none;
+    color: aliceblue;
+}
+
+li{
+     
+    font-size: 14px;
+    flex-direction: column;
+   
+}
+
+
+li a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 25px;
+    flex-direction: column;
+    font-family:  'Rajdhani', sans-serif;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 180px;   
+    line-height: 40px;
+   
+}
+
+
+nav ul li:hover a {
+    outline: 1px solid;
+    transition: 0,2s ease-in-out;
+}
+
+nav ul li{
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+    }
+
+
+/*quienes somos*/
+
+#quienes_somos h1{
+    color:blue;
+    display: flex;
+   justify-content: center;
+    width: 1300px;
+    height: 70px;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+
+body #quienes_somos{
+    margin: 0%;
+    padding:2%
+}
+
+p{
+    font-family:'Rajdhani', sans-serif; 
+    color:white
+}
+
+
+.conts{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+.conts div{
+background-color:lightgray;
+margin: 10px;
+padding: 5px;
+    }
+.conts div img{
+        width: 100%;
+        
+    }
+
+
+    /*extranjeros*/
+
+
+.seccionextranjeros div img{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+       
+}
+
+.seccionextranjeros div img:hover
+    
+    {	transform: scale(1.1, 1.1);
+        z-index: 7;
+
+
+}
+
+.seccionextranjeros div{
+    display: flex;
+    justify-content: center;
+    margin: 30px 
+}
+
+p{
+    font-family: 'Rajdhani', sans-serif;
+    margin: 15px 15px;
+}
+
+.parrafoextranjeros p{
+    color: black;
+}
+
+/*institucional*/
+
+.contenido{
+    display:flex;
+    flex-direction: row;
+    
+   
+}
+
+.contenido div{
+    display: flex;
+    flex-direction: row;
+    
+    margin: 10px;
+padding: 5px;
+}
+
+
+.contenido div{
+    font-family:  'Rajdhani', sans-serif;
+    
+}
+
+        @media screen and (min-width: 320px){
+        ul {
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+        }
+        .conts{
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+        }
+
+        .contenido{
+            flex-direction: column;
+        }
+
+        .contenido div{
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        ul {
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+        }
+        .conts{
+            flex-direction: row
+        }
+        .contenido{
+            flex-direction: column;
+            display: flex;
+            box-sizing: border-box;
+            
+        }
+
+        .contenido div{
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: row
+        }
+    }
