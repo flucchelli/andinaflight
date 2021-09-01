@@ -266,6 +266,12 @@ padding: 5px;
     
 }
 
+
+#contacto{
+    max-width: 90%;
+    margin:auto
+}
+
         @media screen and (min-width: 320px){
         ul {
             display: flex;
