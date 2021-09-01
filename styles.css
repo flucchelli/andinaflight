@@ -319,4 +319,9 @@ padding: 5px;
             box-sizing: border-box;
             flex-direction: row
         }
+        
+        #contacto{
+            max-width: 90%;
+            margin:auto
+            }
     }
